@@ -1,25 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Civtone</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civtone Constructions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1 class="slide-in">Design and Construction</h1>
-      <p class="slide-in">Modern, reliable, and inspired construction</p>
-      <button class="quote-btn" onclick="document.getElementById('quote-form').style.display='block'">Get a Quote</button>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Civtone Constructions</h1>
+            <p>Modern, Reliable & Inspired Construction</p>
+            <a href="#contact" class="quote-btn">Get a Quote</a>
+        </div>
+    </header>
 
-      <form id="quote-form" action="https://formsubmit.co/your@email.com" method="POST" class="form-container">
-        <input type="email" name="email" placeholder="civtonedesign@gmail.coml" required />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                At Civtone Constructions, our vision is to transform the construction industry by delivering
+                exceptional quality and innovative solutions. We aim to create spaces that inspire and enrich
+                the lives of the communities we serve.
+            </p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <h3>Residential</h3>
+                    <p>From cozy homes to luxurious villas, we build spaces to live and grow.</p>
+                </div>
+                <div class="service">
+                    <h3>Commercial</h3>
+                    <p>Modern commercial projects tailored to your business needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Renovation</h3>
+                    <p>Upgrade and enhance your existing space with style and functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get a Quote</h2>
+            <form action="https://formsubmit.co/civtonedesign@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Civtone Constructions. All rights reserved.</p>
+    </footer>
 </body>
 </html>
