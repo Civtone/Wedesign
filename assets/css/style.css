@@ -1,60 +1,95 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
 }
-.hero-section {
-    background: url('images/sample1.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    animation: fadeIn 2s ease-in;
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.hero-text h1 {
-    font-size: 3em;
-    margin: 0;
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
 }
-.hero-text p {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
 }
-.btn {
-    background: #000;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
+.hero {
+  background: url('assets/images/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
-.btn:hover {
-    transform: scale(1.1);
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  animation: fadeIn 2s ease-in;
+}
+.services-preview {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.services-preview h2 {
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.card {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .gallery {
-    padding: 40px 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-.gallery h2 {
-    margin-bottom: 20px;
+  padding: 40px 20px;
+  text-align: center;
 }
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 .gallery-grid img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 .gallery-grid img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+.hover-effect {
+  transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+  transform: scale(1.05);
 }
